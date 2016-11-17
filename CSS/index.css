@@ -1,0 +1,92 @@
+body, html{
+  font-family: "Calibri";
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 40%;
+  height: 400px;
+  margin: auto;
+}
+
+#content{
+  display: none;
+}
+
+#success{
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  text-align: center;
+  padding-left: 40%;
+  visibility: hidden;
+}
+
+.navBar{
+  background-color: steelblue;
+  color: white;
+}
+
+nav ul{
+  display: inline-block;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  padding: 50px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.nameTag{
+  padding-left: 10%;
+  padding-right: 30%;
+  font-size: 50;
+}
+
+.contentBackground{
+  background-color: gray;
+  margin-top: -20px;
+}
+
+.homeCard{
+  background-color: white;
+  text-align: center;
+  padding: 50px;
+}
+
+.workExp{
+  background-color: orange;
+  margin-top: -1780px;
+  visibility: hidden;
+}
+
+.pageContent{
+   padding-left: 20%
+}
+
+.contactInfo{
+  background-color: purple;
+  color: white;
+  margin-top: -680px;
+  visibility: hidden;
+}
+
+.contacts{
+  padding-left: 20%;
+}
+
+.pageTitle{
+  text-align: center;
+}
+
+.footer{
+  background-color: steelblue;
+  margin-top: 1650px;
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
