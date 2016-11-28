@@ -26,6 +26,9 @@
           <li>
             <a onClick="return contact();">Contact</a>
           </li>
+          <li>
+            <a onClick="return blog();">Blog</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -248,6 +251,17 @@
              <br>
              <br>
            </div>
+         </div>
+         <div id="blog" class="blog">
+            <div>
+              <br>
+              <br>
+              <br>
+              <h2 class="pageTitle">Blog</h2>
+              <div>
+                
+              </div>
+            </div>
          </div>
        </div>
        <footer>
