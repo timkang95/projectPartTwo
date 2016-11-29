@@ -79,13 +79,20 @@ a{
   padding-left: 20%;
 }
 
+.blog{
+  background-color: purple;
+  color: white;
+  margin-top: 50px;
+  visibility: hidden;
+}
+
 .pageTitle{
   text-align: center;
 }
 
 .footer{
   background-color: steelblue;
-  margin-top: 1650px;
+  margin-top: 2000px;
   padding: 50px;
   text-align: center;
   color: white;

@@ -1,6 +1,7 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Form Practice - Assignment 2</title>
+    <title>Project Part Two</title>
     <!-- for the carousel -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- everything else -->
@@ -259,7 +260,15 @@
               <br>
               <h2 class="pageTitle">Blog</h2>
               <div>
-                
+                <div id="blogPosts">
+					<div>
+						<h1>Blog for the roast of my resume</h1>
+							<br>
+							Message:
+						    <br>
+						    <input type="text">
+					</div>
+                </div>
               </div>
             </div>
          </div>
