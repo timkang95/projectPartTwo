@@ -86,6 +86,10 @@ a{
   visibility: hidden;
 }
 
+.blogPosts{
+  padding-left: 20%;
+}
+
 .pageTitle{
   text-align: center;
 }

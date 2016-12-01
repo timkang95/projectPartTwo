@@ -259,15 +259,17 @@
               <br>
               <h2 class="pageTitle">Blog</h2>
               <div>
-                <div id="blogPosts">
+                <div class="blogPosts">
 					<div>
 						<h1>Blog for the roast of my resume</h1>
 							<br>
-							<p>By Timothy Kang</p>
+							<p>By Timothy Kang on 11/20/2015</p>
 							<br>
-							<p>Hello, </p>
+							<p>Hello, roast my resume here</p>
 					</div>
                 </div>
+                <br>
+                <br>
               </div>
             </div>
          </div>
