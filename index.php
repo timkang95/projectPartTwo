@@ -243,7 +243,9 @@
                    <br>
                    Message:
                    <br>
-                   <input type="text">
+                   <textArea rows="4" cols="40"></textArea>
+                   <br>
+                   <button type="button">Send</button>
                  </form>
                  <br>
                  <br>
