@@ -257,16 +257,15 @@
             <div>
               <br>
               <br>
-              <br>
               <h2 class="pageTitle">Blog</h2>
               <div>
                 <div id="blogPosts">
 					<div>
 						<h1>Blog for the roast of my resume</h1>
 							<br>
-							Message:
-						    <br>
-						    <input type="text">
+							<p>By Timothy Kang</p>
+							<br>
+							<p>Hello, </p>
 					</div>
                 </div>
               </div>

@@ -71,7 +71,7 @@ a{
 .contactInfo{
   background-color: purple;
   color: white;
-  margin-top: -680px;
+  margin-top: -700px;
   visibility: hidden;
 }
 
@@ -82,7 +82,7 @@ a{
 .blog{
   background-color: purple;
   color: white;
-  margin-top: 50px;
+  margin-top: -450px;
   visibility: hidden;
 }
 
@@ -92,7 +92,7 @@ a{
 
 .footer{
   background-color: steelblue;
-  margin-top: 2000px;
+  margin-top: 1600px;
   padding: 50px;
   text-align: center;
   color: white;

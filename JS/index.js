@@ -7,7 +7,7 @@ function home() {
   document.getElementById("workExp").style.visibility = "hidden";
   document.getElementById("contactInfo").style.visibility = "hidden";
   document.getElementById("blog").style.visibility = "hidden";
-  document.getElementById("pageFooter").style.marginTop = "2000px";
+  document.getElementById("pageFooter").style.marginTop = "1600px";
   document.getElementById("navBar").style.backgroundColor = "steelblue";
   document.getElementById("pageFooter").style.backgroundColor = "steelblue";
   return false;
@@ -18,7 +18,7 @@ function workExp() {
   document.getElementById("workExp").style.visibility = "visible";
   document.getElementById("contactInfo").style.visibility = "hidden";
   document.getElementById("blog").style.visibility = "hidden";
-  document.getElementById("pageFooter").style.marginTop = "600px";
+  document.getElementById("pageFooter").style.marginTop = "700px";
   document.getElementById("navBar").style.backgroundColor = "orange";
     document.getElementById("pageFooter").style.backgroundColor = "orange";
   return false;
@@ -29,7 +29,7 @@ function contact() {
   document.getElementById("workExp").style.visibility = "hidden";
   document.getElementById("contactInfo").style.visibility = "visible";
   document.getElementById("blog").style.visibility = "hidden";
-  document.getElementById("pageFooter").style.marginTop = "100px";
+  document.getElementById("pageFooter").style.marginTop = "250px";
   document.getElementById("navBar").style.backgroundColor = "purple";
   document.getElementById("pageFooter").style.backgroundColor = "purple";
   return false;
@@ -40,7 +40,7 @@ function blog() {
   document.getElementById("workExp").style.visibility = "hidden";
   document.getElementById("contactInfo").style.visibility = "hidden";
   document.getElementById("blog").style.visibility = "visible";
-  document.getElementById("pageFooter").style.marginTop = "100px";
+  document.getElementById("pageFooter").style.marginTop = "125px";
   document.getElementById("navBar").style.backgroundColor = "purple";
   document.getElementById("pageFooter").style.backgroundColor = "purple";
   return false;
