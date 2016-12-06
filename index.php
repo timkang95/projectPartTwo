@@ -1,3 +1,4 @@
+<?php require('includes/config.php'); ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -259,15 +260,28 @@
             <div>
               <br>
               <br>
-              <h2 class="pageTitle">Blog</h2>
+              <h2 class="pageTitle">Personal Blog</h2>
               <div>
                 <div class="blogPosts">
 					<div>
-						<h1>Blog for the roast of my resume</h1>
-							<br>
-							<p>By Timothy Kang on 11/20/2015</p>
-							<br>
-							<p>Hello, roast my resume here</p>
+                    <?php
+                        try {
+
+                            $stmt = $db->query('SELECT postID, postTitle, postDesc, postDate FROM blog_posts ORDER BY postID DESC');
+                            while($row = $stmt->fetch()){
+
+                                echo '<div>';
+                                    echo '<h1>'.$row['postTitle'].'</h1>';
+                                    echo '<p>Posted on '.date('jS M Y H:i:s', strtotime($row['postDate'])).'</p>';
+                                    echo '<p>'.$row['postDesc'].'</p>';
+                                echo '</div>';
+
+                            }
+
+                        } catch(PDOException $e) {
+                            echo $e->getMessage();
+                        }
+                    ?>
 					</div>
                 </div>
                 <br>
