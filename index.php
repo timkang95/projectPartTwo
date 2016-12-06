@@ -233,20 +233,12 @@
                  <b>Contact Me From This Page</b>
                  <br>
                  <br>
-                 <form>
-                   Enter your email:
-                   <br>
-                   <input type="text">
-                   <br>
-                   Subject:
-                   <br>
-                   <input type="text">
-                   <br>
-                   Message:
-                   <br>
-                   <textArea rows="4" cols="40"></textArea>
-                   <br>
-                   <button type="button">Send</button>
+                 <form action="" method="post">
+                   First Name: <input type="text" name="first_name"><br>
+                   Last Name: <input type="text" name="last_name"><br>
+                   Email: <input type="text" name="email"><br>
+                   Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
+                   <input type="submit" name="submit" value="Submit">
                  </form>
                  <br>
                  <br>
