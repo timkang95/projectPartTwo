@@ -234,11 +234,19 @@
                  <br>
                  <br>
                  <form action="" method="post">
-                   First Name: <input type="text" name="first_name"><br>
-                   Last Name: <input type="text" name="last_name"><br>
-                   Email: <input type="text" name="email"><br>
-                   Message:<br><textarea rows="5" name="message" cols="30"></textarea><br>
-                   <input type="submit" name="submit" value="Submit">
+                   First Name:
+                   <br>
+                   <input type="text" name="first_name"><br>
+                   Last Name:
+                   <br>
+                   <input type="text" name="last_name"><br>
+                   Email:
+                   <br>
+                   <input type="text" name="email"><br>
+                   Message:
+                   <br>
+                   <textarea rows="5" name="message" cols="30"></textarea><br>
+                   <input type="submit" name="submitEmail" value="SubmitEmail">
                  </form>
                  <br>
                  <br>
@@ -255,26 +263,37 @@
               <h2 class="pageTitle">Personal Blog</h2>
               <div>
                 <div class="blogPosts">
-					<div>
+					        <div>
                     <?php
-                        try {
+                      try {
 
-                            $stmt = $db->query('SELECT postID, postTitle, postDesc, postDate FROM blog_posts ORDER BY postID DESC');
-                            while($row = $stmt->fetch()){
+                        $stmt = $db->query('SELECT postID, postTitle, postDesc, postDate FROM blog_posts ORDER BY postID DESC');
+                        while($row = $stmt->fetch()){
 
-                                echo '<div>';
-                                    echo '<h1>'.$row['postTitle'].'</h1>';
-                                    echo '<p>Posted on '.date('jS M Y H:i:s', strtotime($row['postDate'])).'</p>';
-                                    echo '<p>'.$row['postDesc'].'</p>';
-                                echo '</div>';
+                          echo '<div>';
+                          echo '<h1>'.$row['postTitle'].'</h1>';
+                          echo '<p>Posted on '.date('jS M Y H:i:s', strtotime($row['postDate'])).'</p>';
+                          echo '<p>'.$row['postDesc'].'</p>';
+                          echo '</div>';
 
-                            }
-
-                        } catch(PDOException $e) {
-                            echo $e->getMessage();
                         }
+
+                      } catch(PDOException $e) {
+                        echo $e->getMessage();
+                      }
                     ?>
-					</div>
+					        </div>
+					        <form action='' method='post'>
+
+                    <p><label>Title</label><br />
+                    <input type='text' name='postTitle' value='<?php if(isset($error)){ echo $_POST['postTitle'];}?>'></p>
+
+                    <p><label>Content</label><br />
+                    <textarea name='postCont' cols='60' rows='10'><?php if(isset($error)){ echo $_POST['postCont'];}?></textarea></p>
+
+                    <p><input type='submit' name='submitPost' value='SubmitPost'></p>
+
+                  </form>
                 </div>
                 <br>
                 <br>
